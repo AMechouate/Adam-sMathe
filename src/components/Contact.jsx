@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { FiMail, FiMessageCircle, FiCreditCard, FiSend } from 'react-icons/fi'
+import { emailjsConfig, recipientEmail } from '../config/emailjs'
 import './Contact.css'
 
 const Contact = ({ t }) => {
@@ -9,6 +11,8 @@ const Contact = ({ t }) => {
     message: '',
     type: 'school'
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null) // 'success' or 'error'
 
   const handleChange = (e) => {
     setFormData({
@@ -17,11 +21,45 @@ const Contact = ({ t }) => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Form submission logic would go here
-    alert(t.contact.form.success || 'Thank you! I will contact you soon.')
-    setFormData({ name: '', email: '', message: '', type: 'school' })
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      // Prepare email template parameters
+      const templateParams = {
+        to_email: recipientEmail,
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: `Neue Kontaktanfrage von ${formData.name} - ${formData.type === 'school' ? 'Schule' : 'Universität/Business'}`,
+        message: formData.message,
+        type: formData.type === 'school' ? 'Schule' : 'Universität/Business',
+        reply_to: formData.email
+      }
+
+      // Send email using EmailJS
+      await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.contactTemplateId,
+        templateParams,
+        emailjsConfig.publicKey
+      )
+
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', message: '', type: 'school' })
+      
+      // Clear success message after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000)
+    } catch (error) {
+      console.error('Email sending failed:', error)
+      setSubmitStatus('error')
+      
+      // Clear error message after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -33,9 +71,20 @@ const Contact = ({ t }) => {
         
         <div className="contact-content">
           <div className="contact-form-section">
+            {submitStatus === 'success' && (
+              <div className="form-success-message">
+                {t.contact.form?.success || 'Vielen Dank! Ich werde mich bald bei dir melden.'}
+              </div>
+            )}
+            {submitStatus === 'error' && (
+              <div className="form-error-message">
+                {t.contact.form?.error || 'Es gab einen Fehler beim Senden. Bitte versuche es später erneut oder kontaktiere mich direkt per E-Mail.'}
+              </div>
+            )}
+
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <label htmlFor="name">{t.contact.form.name || 'Name'}</label>
+                <label htmlFor="name">{t.contact.form.name}</label>
                 <input
                   type="text"
                   id="name"
@@ -43,12 +92,12 @@ const Contact = ({ t }) => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder={t.contact.form.namePlaceholder || 'Your name'}
+                  placeholder={t.contact.form.namePlaceholder}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">{t.contact.form.email || 'Email'}</label>
+                <label htmlFor="email">{t.contact.form.email}</label>
                 <input
                   type="email"
                   id="email"
@@ -56,12 +105,12 @@ const Contact = ({ t }) => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder={t.contact.form.emailPlaceholder || 'your.email@example.com'}
+                  placeholder={t.contact.form.emailPlaceholder}
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="type">{t.contact.form.type || 'I am interested in'}</label>
+                <label htmlFor="type">{t.contact.form.type}</label>
                 <select
                   id="type"
                   name="type"
@@ -69,13 +118,13 @@ const Contact = ({ t }) => {
                   onChange={handleChange}
                   required
                 >
-                  <option value="school">{t.contact.form.typeSchool || 'School Tutoring'}</option>
-                  <option value="university">{t.contact.form.typeUniversity || 'University/Business'}</option>
+                  <option value="school">{t.contact.form.typeSchool}</option>
+                  <option value="university">{t.contact.form.typeUniversity}</option>
                 </select>
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">{t.contact.form.message || 'Message'}</label>
+                <label htmlFor="message">{t.contact.form.message}</label>
                 <textarea
                   id="message"
                   name="message"
@@ -83,13 +132,22 @@ const Contact = ({ t }) => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  placeholder={t.contact.form.messagePlaceholder || 'Tell me about your needs...'}
+                  placeholder={t.contact.form.messagePlaceholder}
                 />
               </div>
 
-              <button type="submit" className="submit-button">
-                <FiSend />
-                {t.contact.form.submit || 'Send Message'}
+              <button type="submit" className="submit-button" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <span className="spinner"></span>
+                    {t.contact.form?.submitting || 'Wird gesendet...'}
+                  </>
+                ) : (
+                  <>
+                    <FiSend />
+                    {t.contact.form.submit}
+                  </>
+                )}
               </button>
             </form>
           </div>
@@ -99,7 +157,7 @@ const Contact = ({ t }) => {
               <div className="info-icon">
                 <FiMessageCircle />
               </div>
-              <h3>{t.contact.platformsTitle || 'Contact'}</h3>
+              <h3>{t.contact.platformsTitle}</h3>
               <p>{t.contact.platforms}</p>
               <div className="platforms">
                 <span className="platform-badge">Skype</span>
@@ -111,7 +169,7 @@ const Contact = ({ t }) => {
               <div className="info-icon">
                 <FiCreditCard />
               </div>
-              <h3>{t.contact.paymentTitle || 'Payment'}</h3>
+              <h3>{t.contact.paymentTitle}</h3>
               <p>{t.contact.payment}</p>
               <div className="platforms">
                 <span className="platform-badge">Überweisung</span>
@@ -123,10 +181,10 @@ const Contact = ({ t }) => {
               <div className="info-icon">
                 <FiMail />
               </div>
-              <h3>{t.contact.availabilityTitle || 'Availability'}</h3>
-              <p>{t.contact.availability || 'I currently have free spots available!'}</p>
+              <h3>{t.contact.availabilityTitle}</h3>
+              <p>{t.contact.availability}</p>
               <p className="availability-note">
-                {t.contact.availabilityNote || 'Contact me quickly to secure your spot.'}
+                {t.contact.availabilityNote}
               </p>
             </div>
           </div>

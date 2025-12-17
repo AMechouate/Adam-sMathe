@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "Helena",
+    "role": "Elternteil (Sohn 13. Klasse)",
+    "subject": "Französisch",
+    "quote": "Adam hat unserem Sohn (13.Klasse) sehr schnell geholfen und ihm sehr gute Tipps für die nächste Schulaufgabe gegeben. Zuvor gab es eine Möglichkrit, ihn kostenlos kennenzulernen.",
+    "rating": 5,
+    "tags": ["Schule", "Abitur", "Eltern-Feedback"]
+  },
+  {
+    "id": 2,
+    "name": "Özlem",
+    "role": "Elternteil (Tochter 13. Klasse)",
+    "subject": "Mathematik",
+    "quote": "Meine Tochter (13. Klasse) hatte heute mit Adam ihren ersten Termin. Adam sowie meine Tochter konnten sehr gut miteinander Arbeiten.",
+    "rating": 5,
+    "tags": ["Schule", "Abitur", "Eltern-Feedback"]
+  },
+  {
+    "id": 3,
+    "name": "Petra",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Ich kann Adam für die Mathemathenachhilfe sehr empfehlen. In unserer ersten Stunde haben wir die Grundlagen der Vektoren wiederholt, und er hat mir alles ganz klar und einfach erklärt. Mit etwas mehr Übung wurde ich sicherlich weiterhin Fortschritte machen.",
+    "rating": 5,
+    "tags": ["Schule", "Vektoren"]
+  },
+  {
+    "id": 5,
+    "name": "Mark",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Adam ist einfach ein Top-Lehrer! Innerhalb von kürzester Zeit war er bereit zu helfen und sich in die Thematik einzuarbeiten. Auch der Unterricht war logisch strukturiert und Aufgaben wurden schematisch und klar durchdacht angegangen! Die Unterrichtsatmosphäre ist auch sehr angenehm.",
+    "rating": 5,
+    "tags": ["Allgemein", "Struktur"]
+  },
+  {
+    "id": 6,
+    "name": "Katja",
+    "role": "Elternteil",
+    "subject": "Französisch",
+    "quote": "Mein Sohn war sehr glücklich nach der ersten Stunde mit Adam und ist der Meinung, dass es jetzt vorwärtsgeht! Seine Motivation ist deutlich gestiegen. Adam ist äußerst sympathisch und bedenkt auch psychologische Aspekte, damit der Schüler sein Selbstbewusstsein wieder aufbauen kann. Das gefällt mir! Danke",
+    "rating": 5,
+    "tags": ["Schule", "Eltern-Feedback", "Motivation"]
+  },
+  {
+    "id": 11,
+    "name": "Katja",
+    "role": "Elternteil",
+    "subject": "Mathematik",
+    "quote": "Adam vermittelt Zahlenverständnis und Interesse an Mathematik – nicht nur stupides Auswendiglernen. Unsere Kinder haben Spaß und machen Fortschritte.",
+    "rating": 5,
+    "tags": ["Schule", "Eltern-Feedback", "Verständnis"]
+  },
+  {
+    "id": 14,
+    "name": "Abdullah",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Adam ist wirklich ein sehr guter Lehrer und gibt mir unheimlich viele Tipps, die ich in der Abiklausur definitiv brauchen werde. Auf jeden Fall zu empfehlen!",
+    "rating": 5,
+    "tags": ["Schule", "Abitur"]
+  },
+  {
+    "id": 21,
+    "name": "Lisa",
+    "role": "Student/in",
+    "subject": "Statistik",
+    "quote": "Sehr kompetent, alles super erklärt",
+    "rating": 5,
+    "tags": ["Uni", "Statistik"]
+  },
+  {
+    "id": 22,
+    "name": "P",
+    "role": "Student/in",
+    "subject": "Analysis",
+    "quote": "Das Lerntempo war sehr angenehm und der Lehrer ist geduldig und freundlich. Schon in der ersten Sitzung konnte ich viel lernen.",
+    "rating": 5,
+    "tags": ["Uni", "Analysis"]
+  },
+  {
+    "id": 25,
+    "name": "Chiara",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Die Probestunde mit Adam war sehr effektiv. Die Methode im Unterricht ist sehr modern und digital, was den Unterricht sehr effektiv macht. Der Stoff wird sehr gut verständlich erklärt und mit passenden Übungen vertieft.",
+    "rating": 5,
+    "tags": ["Allgemein", "Digital", "Methode"]
+  },
+  {
+    "id": 32,
+    "name": "Lilian",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Super Lehrer! Er erklärt sehr visualisiert und geht genau auf die Problematik des Schülers ein. ... Durch die Screenshots während der Nachhilfestunde (welche bei Skype gespeichert werden) hat man immer die Möglichkeit, nochmal auf die Mitschriften und Lösungswege zuzugreifen. Insgesamt ein sehr guter, angenehmer und verständlicher Unterricht!",
+    "rating": 5,
+    "tags": ["Allgemein", "Digital", "Visualisierung"]
+  },
+  {
+    "id": 36,
+    "name": "Fabian",
+    "role": "Schüler/in (GK/LK)",
+    "subject": "Mathematik",
+    "quote": "Ich bin sehr zufrieden mit der Zusammenarbeit mit Adam. ... Außerdem zeigt er einem Wege, die man aus der Schule nicht kennt und die teilweise deutlich einfacher nachvollziehen zu sind. Jedem, egal ob Mathe GK oder LK, gut oder schlecht in Mathe würde ich die Zusammenarbeit mit dem Superprof Adam zu 100% weiterempfehlen.",
+    "rating": 5,
+    "tags": ["Schule", "Abitur", "GK/LK"]
+  },
+  {
+    "id": 38,
+    "name": "Fouad",
+    "role": "Dualstudent",
+    "subject": "Wirtschaftsmathematik & Statistik",
+    "quote": "Adam war für mich nicht nur ein Mathe-Nachhilfenachhilfelehrer. ... Er besitzt die Fähigkeit sich (spezielle) Themen sehr schnell anzueignen und diese in kürzester verständlich wiederzugeben. ... ich als Dualstudent habe einen wirklich engen Plan. Trotz dessen hatten wir Unterricht an allen denkbaren Tagen sowie Uhrzeiten. ... wodurch ich die Module Wirtschaftsmathematik sowie Statistik nicht bloß bestanden, sondern mit guten Noten abschließen konnte.",
+    "rating": 5,
+    "tags": ["Uni", "Business", "Statistik", "Flexibilität"]
+  },
+  {
+    "id": 41,
+    "name": "Markus",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Adam ist ein verständnisvoller und empathischer Lehrer. ... Er beherrscht die gesamte Mathe-Klaviatur von Schul-Mathe bis hin zu Hochschul-Mathematik.",
+    "rating": 5,
+    "tags": ["Allgemein", "Kompetenz"]
+  },
+  {
+    "id": 42,
+    "name": "Léon",
+    "role": "Schüler/in",
+    "subject": "Mathematik",
+    "quote": "Adam hat mit seinen digitalen Unterrichtsmethoden schnell und einfach Herangehensweise an Problemstellungen geliefert und ist dabei auch auf jede Rückfrage kompetent eingegangen.",
+    "rating": 5,
+    "tags": ["Allgemein", "Digital", "Methode"]
+  },
+  {
+    "id": 43,
+    "name": "Sebastian",
+    "role": "Schüler/in",
+    "subject": "Mathematik (Abitur)",
+    "quote": "Ich habe mich mit Adam direkt gut verstanden, er ist sympathisch und geduldig. ... Auch wenn man bei Aufgaben mal etwas falsch macht hilft Adam mir, den Fehler zu verstehen und erklärt es mir bis ich es verstanden habe. ... mit ihm kann man sich sehr gut auf das (Fach)abitur vorbereiten.",
+    "rating": 5,
+    "tags": ["Schule", "Abitur", "Geduld"]
+  }
+]
+

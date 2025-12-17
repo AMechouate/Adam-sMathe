@@ -1,0 +1,214 @@
+.admin-panel {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  /* Hide by default - uncomment to show, or add authentication */
+  /* display: none; */
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-header h3 {
+  color: var(--text-primary);
+  font-size: 1.8rem;
+}
+
+.admin-filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.admin-filters button {
+  padding: 0.5rem 1rem;
+  background: var(--bg-tertiary);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.admin-filters button:hover {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+.admin-filters button.active {
+  background: var(--gradient-primary);
+  color: white;
+  border-color: transparent;
+}
+
+.admin-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-review-card {
+  background: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 16px;
+  border-left: 4px solid var(--accent-orange);
+  transition: all 0.3s ease;
+}
+
+.admin-review-card.pending {
+  border-left-color: var(--accent-yellow);
+}
+
+.admin-review-card.approved {
+  border-left-color: #4caf50;
+}
+
+.admin-review-card.rejected {
+  border-left-color: #ff4444;
+  opacity: 0.7;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+
+.review-header h4 {
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-header p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.review-rating {
+  color: var(--accent-yellow);
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.pending {
+  background: rgba(255, 215, 0, 0.2);
+  color: var(--accent-yellow);
+}
+
+.status-badge.approved {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+.status-badge.rejected {
+  background: rgba(255, 68, 68, 0.2);
+  color: #ff4444;
+}
+
+.review-quote {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.review-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.review-tags .tag {
+  padding: 0.3rem 0.7rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.review-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-approve,
+.btn-reject {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-approve {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-approve:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.btn-reject {
+  background: #ff4444;
+  color: white;
+}
+
+.btn-reject:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+.review-date {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bg-tertiary);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .admin-panel {
+    padding: 1rem;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-header {
+    flex-direction: column;
+  }
+
+  .review-actions {
+    flex-direction: column;
+  }
+
+  .btn-approve,
+  .btn-reject {
+    width: 100%;
+  }
+}
+

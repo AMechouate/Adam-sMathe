@@ -96,6 +96,37 @@ export const translations = {
         ]
       }
     },
+    testimonials: {
+      title: "Was meine Schüler sagen",
+      subtitle: "Echte Erfahrungen von Schülern, Studenten und Eltern",
+      readMore: "Mehr lesen",
+      readLess: "Weniger anzeigen"
+    },
+    addReview: {
+      title: "Teile deine Erfahrung",
+      subtitle: "Hilf anderen Schülern und Studenten, indem du deine Erfahrung mit Adam teilst",
+      success: "Vielen Dank für deine Bewertung! Sie wird nach Überprüfung veröffentlicht.",
+      form: {
+        name: "Name",
+        namePlaceholder: "Dein Name",
+        role: "Rolle",
+        selectRole: "Bitte wählen",
+        roleStudent: "Schüler/in",
+        roleUniversity: "Student/in",
+        roleParent: "Elternteil",
+        roleDual: "Dualstudent",
+        subject: "Fach",
+        subjectPlaceholder: "z.B. Mathematik, Französisch, Statistik",
+        rating: "Bewertung",
+        stars: "Sterne",
+        message: "Deine Bewertung",
+        messagePlaceholder: "Teile deine Erfahrung mit Adam...",
+        tags: "Tags (optional)",
+        submit: "Bewertung absenden",
+        submitting: "Wird gesendet...",
+        error: "Es gab einen Fehler beim Senden. Bitte versuche es später erneut."
+      }
+    },
     gallery: {
       title: "Meine Arbeit",
       subtitle: "Einblicke in meine Nachhilfe mit Schülern verschiedener Schulformen"
@@ -122,7 +153,9 @@ export const translations = {
         message: "Nachricht",
         messagePlaceholder: "Erzähl mir von deinen Bedürfnissen...",
         submit: "Nachricht senden",
-        success: "Vielen Dank! Ich werde mich bald bei dir melden."
+        submitting: "Wird gesendet...",
+        success: "Vielen Dank! Ich werde mich bald bei dir melden.",
+        error: "Es gab einen Fehler beim Senden. Bitte versuche es später erneut oder kontaktiere mich direkt per E-Mail."
       }
     },
     footer: {
@@ -226,6 +259,37 @@ export const translations = {
         ]
       }
     },
+    testimonials: {
+      title: "What My Students Say",
+      subtitle: "Real experiences from students and parents",
+      readMore: "Read more",
+      readLess: "Show less"
+    },
+    addReview: {
+      title: "Share Your Experience",
+      subtitle: "Help other students by sharing your experience with Adam",
+      success: "Thank you for your review! It will be published after review.",
+      form: {
+        name: "Name",
+        namePlaceholder: "Your name",
+        role: "Role",
+        selectRole: "Please select",
+        roleStudent: "Student",
+        roleUniversity: "University Student",
+        roleParent: "Parent",
+        roleDual: "Dual Student",
+        subject: "Subject",
+        subjectPlaceholder: "e.g. Mathematics, French, Statistics",
+        rating: "Rating",
+        stars: "Stars",
+        message: "Your Review",
+        messagePlaceholder: "Share your experience with Adam...",
+        tags: "Tags (optional)",
+        submit: "Submit Review",
+        submitting: "Submitting...",
+        error: "There was an error sending. Please try again later."
+      }
+    },
     gallery: {
       title: "My Work",
       subtitle: "Insights into my tutoring with students from different school types"
@@ -252,7 +316,9 @@ export const translations = {
         message: "Message",
         messagePlaceholder: "Tell me about your needs...",
         submit: "Send Message",
-        success: "Thank you! I will contact you soon."
+        submitting: "Sending...",
+        success: "Thank you! I will contact you soon.",
+        error: "There was an error sending. Please try again later or contact me directly by email."
       }
     },
     footer: {
@@ -356,6 +422,37 @@ export const translations = {
         ]
       }
     },
+    testimonials: {
+      title: "Ce que disent mes élèves",
+      subtitle: "Expériences réelles d'élèves et de parents",
+      readMore: "Lire plus",
+      readLess: "Afficher moins"
+    },
+    addReview: {
+      title: "Partage ton expérience",
+      subtitle: "Aide d'autres élèves en partageant ton expérience avec Adam",
+      success: "Merci pour ton avis ! Il sera publié après vérification.",
+      form: {
+        name: "Nom",
+        namePlaceholder: "Ton nom",
+        role: "Rôle",
+        selectRole: "Veuillez sélectionner",
+        roleStudent: "Élève",
+        roleUniversity: "Étudiant",
+        roleParent: "Parent",
+        roleDual: "Étudiant en alternance",
+        subject: "Matière",
+        subjectPlaceholder: "ex. Mathématiques, Français, Statistiques",
+        rating: "Note",
+        stars: "Étoiles",
+        message: "Ton avis",
+        messagePlaceholder: "Partage ton expérience avec Adam...",
+        tags: "Tags (optionnel)",
+        submit: "Envoyer l'avis",
+        submitting: "Envoi en cours...",
+        error: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer plus tard."
+      }
+    },
     gallery: {
       title: "Mon Travail",
       subtitle: "Aperçus de mes cours avec des élèves de différents types d'écoles"
@@ -382,7 +479,9 @@ export const translations = {
         message: "Message",
         messagePlaceholder: "Parle-moi de tes besoins...",
         submit: "Envoyer le message",
-        success: "Merci ! Je te contacterai bientôt."
+        submitting: "Envoi en cours...",
+        success: "Merci ! Je te contacterai bientôt.",
+        error: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer plus tard ou me contacter directement par e-mail."
       }
     },
     footer: {
@@ -486,6 +585,37 @@ export const translations = {
         ]
       }
     },
+    testimonials: {
+      title: "ماذا يقول طلابي",
+      subtitle: "تجارب حقيقية من الطلاب والآباء",
+      readMore: "اقرأ المزيد",
+      readLess: "عرض أقل"
+    },
+    addReview: {
+      title: "شارك تجربتك",
+      subtitle: "ساعد الطلاب الآخرين من خلال مشاركة تجربتك مع آدم",
+      success: "شكرًا لك على تقييمك! سيتم نشره بعد المراجعة.",
+      form: {
+        name: "الاسم",
+        namePlaceholder: "اسمك",
+        role: "الدور",
+        selectRole: "يرجى الاختيار",
+        roleStudent: "طالب",
+        roleUniversity: "طالب جامعي",
+        roleParent: "والد",
+        roleDual: "طالب مزدوج",
+        subject: "المادة",
+        subjectPlaceholder: "مثل: الرياضيات، الفرنسية، الإحصاء",
+        rating: "التقييم",
+        stars: "نجوم",
+        message: "تقييمك",
+        messagePlaceholder: "شارك تجربتك مع آدم...",
+        tags: "العلامات (اختياري)",
+        submit: "إرسال التقييم",
+        submitting: "جاري الإرسال...",
+        error: "حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى لاحقًا."
+      }
+    },
     gallery: {
       title: "عملي",
       subtitle: "نظرة على دروسي مع طلاب من أنواع مدارس مختلفة"
@@ -512,7 +642,9 @@ export const translations = {
         message: "الرسالة",
         messagePlaceholder: "أخبرني عن احتياجاتك...",
         submit: "إرسال الرسالة",
-        success: "شكرًا! سأتصل بك قريبًا."
+        submitting: "جاري الإرسال...",
+        success: "شكرًا! سأتصل بك قريبًا.",
+        error: "حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى لاحقًا أو الاتصال بي مباشرة عبر البريد الإلكتروني."
       }
     },
     footer: {

@@ -264,6 +264,13 @@
   flex-shrink: 0;
 }
 
+.service-testimonials {
+  margin: 4rem 0;
+  padding: 3rem;
+  background: var(--bg-primary);
+  border-radius: 20px;
+}
+
 @media (max-width: 968px) {
   .section-content {
     grid-template-columns: 1fr;

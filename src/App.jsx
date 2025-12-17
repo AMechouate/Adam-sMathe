@@ -3,6 +3,9 @@ import { translations } from './translations'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import AdamMethod from './components/AdamMethod'
+import Testimonials from './components/Testimonials'
+import AddReview from './components/AddReview'
+import AdminPanel from './components/AdminPanel'
 import About from './components/About'
 import Services from './components/Services'
 import Gallery from './components/Gallery'
@@ -52,6 +55,9 @@ function App() {
       />
       <Hero t={t} />
       <AdamMethod t={t} />
+      <Testimonials t={t} filterTags={[]} />
+      <AddReview t={t} />
+      <AdminPanel />
       <About t={t} />
       <Services t={t} />
       <Gallery t={t} />

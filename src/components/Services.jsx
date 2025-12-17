@@ -1,4 +1,5 @@
 import { FiBook, FiGlobe, FiAward, FiMonitor, FiUsers, FiBriefcase } from 'react-icons/fi'
+import Testimonials from './Testimonials'
 import './Services.css'
 
 const Services = ({ t }) => {
@@ -51,6 +52,11 @@ const Services = ({ t }) => {
           </div>
         </div>
 
+        {/* School Testimonials */}
+        <div className="service-testimonials">
+          <Testimonials t={t} filterTags={["Schule", "Abitur", "Eltern-Feedback"]} />
+        </div>
+
         {/* University & Business Section */}
         <div id="services-university" className="service-section university-section">
           <div className="section-header">
@@ -79,6 +85,11 @@ const Services = ({ t }) => {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* University Testimonials */}
+        <div className="service-testimonials">
+          <Testimonials t={t} filterTags={["Uni", "Business", "Statistik", "Analysis"]} />
         </div>
 
         {/* Formats Section */}

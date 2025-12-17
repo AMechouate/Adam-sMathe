@@ -1,0 +1,41 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+/* Smooth scrolling */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .nav a::after {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .process-step:hover {
+  transform: translateX(-10px);
+}
+
+[dir="rtl"] .service-list li {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+
+[dir="rtl"] .service-list li::before {
+  left: auto;
+  right: 0;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+  text-align: left;
+}
+

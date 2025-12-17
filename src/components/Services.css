@@ -3,91 +3,277 @@
   background-color: var(--bg-primary);
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.service-card {
+.service-section {
+  margin-bottom: 6rem;
+  padding: 3rem;
   background: var(--bg-secondary);
-  padding: 2.5rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px var(--shadow);
-  transition: all 0.3s ease;
+  border-radius: 24px;
   position: relative;
   overflow: hidden;
 }
 
-.service-card::before {
+.service-section::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
+  border-radius: 24px 24px 0 0;
+}
+
+.school-section::before {
   background: var(--gradient-primary);
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
+  box-shadow: var(--glow-orange);
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px var(--shadow);
+.university-section::before {
+  background: var(--gradient-blue);
+  box-shadow: var(--glow-blue);
 }
 
-.service-card:hover::before {
-  transform: scaleX(1);
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.service-icon {
+.section-icon {
   width: 80px;
   height: 80px;
-  background: var(--gradient-primary);
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
   color: white;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-.service-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+.school-icon {
+  background: var(--gradient-primary);
+  box-shadow: var(--glow-orange);
+}
+
+.university-icon {
+  background: var(--gradient-blue);
+  box-shadow: var(--glow-blue);
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
   color: var(--text-primary);
 }
 
-.service-description {
+.section-focus {
+  font-size: 1.2rem;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  font-weight: 500;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.section-visual {
+  position: sticky;
+  top: 100px;
+}
+
+.visual-frame {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.school-frame {
+  border: 3px solid var(--accent-orange);
+  box-shadow: var(--glow-orange);
+}
+
+.university-frame {
+  border: 3px solid var(--accent-blue);
+  box-shadow: var(--glow-blue);
+}
+
+.visual-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.05) saturate(1.1);
+}
+
+.section-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
 }
 
 .service-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .service-list li {
-  padding: 0.75rem 0;
-  padding-left: 1.5rem;
-  position: relative;
+  padding: 1rem 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-orange);
   color: var(--text-primary);
-  line-height: 1.6;
+  transition: all 0.3s ease;
 }
 
-.service-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
+.service-list li:hover {
+  transform: translateX(5px);
+  border-left-color: var(--accent-yellow);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.2);
+}
+
+.university-section .service-list li {
+  border-left-color: var(--accent-blue);
+}
+
+.university-section .service-list li:hover {
+  border-left-color: var(--accent-blue-glow);
+  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3);
+}
+
+.international-note {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  border: 2px solid var(--accent-orange);
+  margin-top: 1rem;
+}
+
+.note-icon {
+  font-size: 2rem;
   color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
+.international-note strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--accent-orange);
+}
+
+.international-note ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.international-note ul li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  border: none;
+  background: none;
+  padding-left: 0;
+}
+
+.international-note ul li:hover {
+  transform: none;
+}
+
+.formats-section {
+  margin-top: 4rem;
+  padding: 3rem;
+  background: var(--bg-secondary);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.formats-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formats-icon {
+  font-size: 2.5rem;
+  color: var(--accent-orange);
+}
+
+.formats-header h3 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.formats-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.formats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.format-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 12px;
+  border: 2px solid var(--accent-orange);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.format-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--glow-orange);
+  border-color: var(--accent-yellow);
+}
+
+.format-check {
+  width: 30px;
+  height: 30px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 968px) {
+  .section-content {
+    grid-template-columns: 1fr;
+  }
+
+  .section-visual {
+    position: static;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -95,13 +281,22 @@
     padding: 4rem 1rem;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  .service-section {
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
   }
 
-  .service-card {
-    padding: 2rem;
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .section-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .formats-section {
+    padding: 2rem 1.5rem;
   }
 }
-

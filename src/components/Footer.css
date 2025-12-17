@@ -14,23 +14,7 @@
   gap: 2rem;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.footer-logo img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
+/* Logo styles are in Logo.css */
 
 .footer-rights {
   color: var(--text-secondary);

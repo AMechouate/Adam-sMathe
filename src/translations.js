@@ -10,7 +10,22 @@ export const translations = {
     },
     hero: {
       title: "Professionelle Mathenachhilfe",
-      subtitle: "Erfahrener Matheprofi mit über 15 Jahren Erfahrung"
+      subtitle: "Erfahrener Matheprofi mit über 15 Jahren Erfahrung",
+      cta: {
+        school: "Für Schüler & Eltern",
+        university: "Für Studenten & Business"
+      }
+    },
+    method: {
+      title: "Die Adam-Methode",
+      subtitle: "Modernes Lernen mit digitaler Handschrift",
+      description: "Mit dem iPad und Apple Pencil erstelle ich dynamische, handgeschriebene Notizen, die komplexe mathematische Konzepte verständlich und visuell ansprechend machen. Diese moderne Methode macht Lernen interaktiv und effektiv.",
+      features: [
+        "Digitale Handschrift mit Apple Pencil",
+        "Farbige, strukturierte Notizen",
+        "Live-Erklärungen während des Unterrichts",
+        "Nachvollziehbare Schritt-für-Schritt-Lösungen"
+      ]
     },
     about: {
       title: "Über mich",
@@ -40,6 +55,7 @@ export const translations = {
       school: {
         title: "Schulische Nachhilfe",
         description: "Professionelle Mathenachhilfe für alle Klassenstufen",
+        focus: "Verständnis & bessere Noten",
         levels: [
           "2. Klasse bis Abitur",
           "Grundkurs Mathematik",
@@ -59,6 +75,7 @@ export const translations = {
       university: {
         title: "Universitätsmathematik",
         description: "Unterstützung für Studenten in verschiedenen Studiengängen",
+        focus: "Karriere & Prüfungsvorbereitung",
         subjects: [
           "Mathematik I, II und III",
           "Informatik",
@@ -88,7 +105,25 @@ export const translations = {
       subtitle: "Aktuell habe ich noch freie Plätze – melde dich schnell!",
       urgency: "Die Mathe-Klausuren, Vor-Abis und Abiturprüfungen stehen schon vor der Tür!",
       platforms: "Kontaktiere mich über Skype oder Microsoft Teams",
-      payment: "Bezahlung: Überweisung oder PayPal"
+      platformsTitle: "Kontakt",
+      payment: "Bezahlung: Überweisung oder PayPal",
+      paymentTitle: "Bezahlung",
+      availability: "Aktuell habe ich noch freie Plätze verfügbar!",
+      availabilityTitle: "Verfügbarkeit",
+      availabilityNote: "Melde dich schnell, um deinen Platz zu sichern.",
+      form: {
+        name: "Name",
+        namePlaceholder: "Dein Name",
+        email: "E-Mail",
+        emailPlaceholder: "deine.email@beispiel.com",
+        type: "Ich interessiere mich für",
+        typeSchool: "Schulische Nachhilfe",
+        typeUniversity: "Universität/Business",
+        message: "Nachricht",
+        messagePlaceholder: "Erzähl mir von deinen Bedürfnissen...",
+        submit: "Nachricht senden",
+        success: "Vielen Dank! Ich werde mich bald bei dir melden."
+      }
     },
     footer: {
       rights: "© 2024 Adam's Mathe. Alle Rechte vorbehalten."
@@ -105,7 +140,22 @@ export const translations = {
     },
     hero: {
       title: "Professional Math Tutoring",
-      subtitle: "Experienced Math Professional with over 15 years of experience"
+      subtitle: "Experienced Math Professional with over 15 years of experience",
+      cta: {
+        school: "For Students & Parents",
+        university: "For Students & Business"
+      }
+    },
+    method: {
+      title: "The Adam Method",
+      subtitle: "Modern Learning with Digital Handwriting",
+      description: "Using the iPad and Apple Pencil, I create dynamic, handwritten notes that make complex mathematical concepts understandable and visually appealing. This modern method makes learning interactive and effective.",
+      features: [
+        "Digital handwriting with Apple Pencil",
+        "Colorful, structured notes",
+        "Live explanations during lessons",
+        "Traceable step-by-step solutions"
+      ]
     },
     about: {
       title: "About Me",
@@ -135,6 +185,7 @@ export const translations = {
       school: {
         title: "School Tutoring",
         description: "Professional math tutoring for all grade levels",
+        focus: "Understanding & Better Grades",
         levels: [
           "2nd grade to Abitur",
           "Basic Math Course",
@@ -154,6 +205,7 @@ export const translations = {
       university: {
         title: "University Mathematics",
         description: "Support for students in various degree programs",
+        focus: "Career & Exam Preparation",
         subjects: [
           "Mathematics I, II, and III",
           "Computer Science",
@@ -183,7 +235,25 @@ export const translations = {
       subtitle: "I currently have free spots – contact me quickly!",
       urgency: "Math exams, pre-Abitur, and Abitur exams are just around the corner!",
       platforms: "Contact me via Skype or Microsoft Teams",
-      payment: "Payment: Bank transfer or PayPal"
+      platformsTitle: "Contact",
+      payment: "Payment: Bank transfer or PayPal",
+      paymentTitle: "Payment",
+      availability: "I currently have free spots available!",
+      availabilityTitle: "Availability",
+      availabilityNote: "Contact me quickly to secure your spot.",
+      form: {
+        name: "Name",
+        namePlaceholder: "Your name",
+        email: "Email",
+        emailPlaceholder: "your.email@example.com",
+        type: "I am interested in",
+        typeSchool: "School Tutoring",
+        typeUniversity: "University/Business",
+        message: "Message",
+        messagePlaceholder: "Tell me about your needs...",
+        submit: "Send Message",
+        success: "Thank you! I will contact you soon."
+      }
     },
     footer: {
       rights: "© 2024 Adam's Mathe. All rights reserved."
@@ -200,7 +270,22 @@ export const translations = {
     },
     hero: {
       title: "Cours de Mathématiques Professionnels",
-      subtitle: "Professionnel des Mathématiques Expérimenté avec plus de 15 ans d'expérience"
+      subtitle: "Professionnel des Mathématiques Expérimenté avec plus de 15 ans d'expérience",
+      cta: {
+        school: "Pour Élèves & Parents",
+        university: "Pour Étudiants & Business"
+      }
+    },
+    method: {
+      title: "La Méthode Adam",
+      subtitle: "Apprentissage Moderne avec Écriture Numérique",
+      description: "Avec l'iPad et l'Apple Pencil, je crée des notes dynamiques et manuscrites qui rendent les concepts mathématiques complexes compréhensibles et visuellement attrayants. Cette méthode moderne rend l'apprentissage interactif et efficace.",
+      features: [
+        "Écriture numérique avec Apple Pencil",
+        "Notes colorées et structurées",
+        "Explications en direct pendant les cours",
+        "Solutions étape par étape traçables"
+      ]
     },
     about: {
       title: "À propos de moi",
@@ -230,6 +315,7 @@ export const translations = {
       school: {
         title: "Cours Scolaires",
         description: "Cours de mathématiques professionnels pour tous les niveaux",
+        focus: "Compréhension & Meilleures Notes",
         levels: [
           "2e année jusqu'au Bac",
           "Cours de Mathématiques de Base",
@@ -249,6 +335,7 @@ export const translations = {
       university: {
         title: "Mathématiques Universitaires",
         description: "Soutien pour les étudiants dans divers programmes d'études",
+        focus: "Carrière & Préparation aux Examens",
         subjects: [
           "Mathématiques I, II et III",
           "Informatique",
@@ -278,7 +365,25 @@ export const translations = {
       subtitle: "J'ai actuellement des places libres – contacte-moi rapidement !",
       urgency: "Les examens de mathématiques, pré-Bac et examens du Bac approchent !",
       platforms: "Contacte-moi via Skype ou Microsoft Teams",
-      payment: "Paiement : Virement bancaire ou PayPal"
+      platformsTitle: "Contact",
+      payment: "Paiement : Virement bancaire ou PayPal",
+      paymentTitle: "Paiement",
+      availability: "J'ai actuellement des places libres disponibles !",
+      availabilityTitle: "Disponibilité",
+      availabilityNote: "Contacte-moi rapidement pour sécuriser ta place.",
+      form: {
+        name: "Nom",
+        namePlaceholder: "Ton nom",
+        email: "E-mail",
+        emailPlaceholder: "ton.email@exemple.com",
+        type: "Je suis intéressé par",
+        typeSchool: "Cours Scolaires",
+        typeUniversity: "Université/Business",
+        message: "Message",
+        messagePlaceholder: "Parle-moi de tes besoins...",
+        submit: "Envoyer le message",
+        success: "Merci ! Je te contacterai bientôt."
+      }
     },
     footer: {
       rights: "© 2024 Adam's Mathe. Tous droits réservés."
@@ -295,7 +400,22 @@ export const translations = {
     },
     hero: {
       title: "دروس رياضيات احترافية",
-      subtitle: "محترف رياضيات ذو خبرة تزيد عن 15 عامًا"
+      subtitle: "محترف رياضيات ذو خبرة تزيد عن 15 عامًا",
+      cta: {
+        school: "للطلاب والآباء",
+        university: "للطلاب والأعمال"
+      }
+    },
+    method: {
+      title: "طريقة آدم",
+      subtitle: "تعلم حديث بالكتابة الرقمية",
+      description: "باستخدام iPad وApple Pencil، أنشئ ملاحظات ديناميكية مكتوبة بخط اليد تجعل المفاهيم الرياضية المعقدة مفهومة وجذابة بصريًا. هذه الطريقة الحديثة تجعل التعلم تفاعليًا وفعالًا.",
+      features: [
+        "كتابة رقمية باستخدام Apple Pencil",
+        "ملاحظات ملونة ومنظمة",
+        "شرح مباشر أثناء الدروس",
+        "حلول خطوة بخطوة قابلة للتتبع"
+      ]
     },
     about: {
       title: "عني",
@@ -325,6 +445,7 @@ export const translations = {
       school: {
         title: "دروس مدرسية",
         description: "دروس رياضيات احترافية لجميع المستويات",
+        focus: "الفهم والدرجات الأفضل",
         levels: [
           "الصف الثاني حتى البكالوريا",
           "دورة الرياضيات الأساسية",
@@ -344,6 +465,7 @@ export const translations = {
       university: {
         title: "رياضيات الجامعة",
         description: "دعم للطلاب في برامج دراسية مختلفة",
+        focus: "المهنة والتحضير للامتحانات",
         subjects: [
           "الرياضيات I و II و III",
           "علوم الحاسوب",
@@ -373,7 +495,25 @@ export const translations = {
       subtitle: "لدي حاليًا أماكن متاحة – اتصل بي بسرعة!",
       urgency: "امتحانات الرياضيات، ما قبل البكالوريا وامتحانات البكالوريا على الأبواب!",
       platforms: "اتصل بي عبر Skype أو Microsoft Teams",
-      payment: "الدفع: تحويل بنكي أو PayPal"
+      platformsTitle: "اتصل",
+      payment: "الدفع: تحويل بنكي أو PayPal",
+      paymentTitle: "الدفع",
+      availability: "لدي حاليًا أماكن متاحة!",
+      availabilityTitle: "التوفر",
+      availabilityNote: "اتصل بي بسرعة لتأمين مكانك.",
+      form: {
+        name: "الاسم",
+        namePlaceholder: "اسمك",
+        email: "البريد الإلكتروني",
+        emailPlaceholder: "بريدك@example.com",
+        type: "أنا مهتم بـ",
+        typeSchool: "دروس مدرسية",
+        typeUniversity: "الجامعة/الأعمال",
+        message: "الرسالة",
+        messagePlaceholder: "أخبرني عن احتياجاتك...",
+        submit: "إرسال الرسالة",
+        success: "شكرًا! سأتصل بك قريبًا."
+      }
     },
     footer: {
       rights: "© 2024 Adam's Mathe. جميع الحقوق محفوظة."

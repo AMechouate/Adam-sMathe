@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { translations } from './translations'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import AdamMethod from './components/AdamMethod'
 import About from './components/About'
 import Services from './components/Services'
 import Gallery from './components/Gallery'
@@ -11,10 +12,11 @@ import './App.css'
 
 function App() {
   const [language, setLanguage] = useState('de')
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light'
+    // Dark mode is default, but load saved preference if exists
+    const savedTheme = localStorage.getItem('theme') || 'dark'
     const savedLang = localStorage.getItem('language') || 'de'
     setTheme(savedTheme)
     setLanguage(savedLang)
@@ -49,6 +51,7 @@ function App() {
         toggleTheme={toggleTheme}
       />
       <Hero t={t} />
+      <AdamMethod t={t} />
       <About t={t} />
       <Services t={t} />
       <Gallery t={t} />

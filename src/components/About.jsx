@@ -6,12 +6,17 @@ const About = ({ t }) => {
       <div className="container">
         <h2 className="section-title">{t.about.title}</h2>
         
-        <div className="about-content">
-          <div className="about-image">
-            <img src="/Bilder/Adam2.jpeg" alt={t.about.name} />
+        <div className="about-hero">
+          <div className="about-portrait">
+            <div className="portrait-frame">
+              <img src="/Bilder/Adam2.jpeg" alt={t.about.name} />
+              <div className="ipad-overlay">
+                <img src="/Bilder/Image5.png" alt="iPad Notes" />
+              </div>
+            </div>
           </div>
           
-          <div className="about-text">
+          <div className="about-intro">
             <div className="about-header">
               <h3>{t.about.name}</h3>
               <p className="age">{t.about.age}</p>
@@ -24,17 +29,17 @@ const About = ({ t }) => {
             <p className="experience">{t.about.experience}</p>
             
             <p className="description">{t.about.description}</p>
-            
-            <div className="stats">
-              <div className="stat-card">
-                <div className="stat-number">{t.about.stats.students.split(' ')[0]}</div>
-                <div className="stat-label">{t.about.stats.students.split(' ').slice(1).join(' ')}</div>
-              </div>
-              <div className="stat-card">
-                <div className="stat-number">{t.about.stats.years}</div>
-                <div className="stat-label">{t.about.stats.success}</div>
-              </div>
-            </div>
+          </div>
+        </div>
+
+        <div className="stats-grid">
+          <div className="stat-card">
+            <div className="stat-number">{t.about.stats.students.split(' ')[0]}</div>
+            <div className="stat-label">{t.about.stats.students.split(' ').slice(1).join(' ')}</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">{t.about.stats.years}</div>
+            <div className="stat-label">{t.about.stats.success}</div>
           </div>
         </div>
 
@@ -60,4 +65,3 @@ const About = ({ t }) => {
 }
 
 export default About
-

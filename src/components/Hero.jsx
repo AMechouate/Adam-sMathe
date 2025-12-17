@@ -4,23 +4,36 @@ const Hero = ({ t }) => {
   return (
     <section id="home" className="hero">
       <div className="hero-container">
-        <div className="hero-content">
-          <h1 className="hero-title">{t.hero.title}</h1>
-          <p className="hero-subtitle">{t.hero.subtitle}</p>
-          <div className="hero-slogan">
-            <span className="slogan-text">{t.slogan}</span>
+        <div className="hero-split">
+          {/* Left side - Content */}
+          <div className="hero-content">
+            <h1 className="hero-title">Adam's Mathe</h1>
+            <div className="hero-slogan">
+              <span className="slogan-text">{t.slogan}</span>
+            </div>
+            <p className="hero-subtitle">{t.hero.subtitle}</p>
+            
+            <div className="hero-cta">
+              <a href="#services-school" className="cta-button school">
+                {t.hero.cta.school}
+              </a>
+              <a href="#services-university" className="cta-button university">
+                {t.hero.cta.university}
+              </a>
+            </div>
           </div>
-          <div className="hero-cta">
-            <a href="#contact" className="cta-button primary">
-              {t.nav.contact}
-            </a>
-            <a href="#about" className="cta-button secondary">
-              {t.nav.about}
-            </a>
+
+          {/* Right side - Visual blend */}
+          <div className="hero-visual">
+            <div className="hero-image-adam">
+              <img src="/Bilder/Adam.jpg" alt="Adam" />
+            </div>
+            <div className="hero-image-ipad">
+              <div className="ipad-frame">
+                <img src="/Bilder/Image1.png" alt="iPad Math Notes" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="hero-image">
-          <img src="/Bilder/Adam.jpg" alt="Adam" />
         </div>
       </div>
       <div className="hero-wave">
@@ -33,4 +46,3 @@ const Hero = ({ t }) => {
 }
 
 export default Hero
-

@@ -5,24 +5,66 @@
 }
 
 :root {
-  /* Light mode colors */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --text-primary: #1a1a1a;
-  --text-secondary: #4a4a4a;
-  --accent-gold: #d4af37;
-  --accent-orange: #ff8c42;
-  --accent-orange-light: #ffb380;
-  --gradient-primary: linear-gradient(135deg, #d4af37 0%, #ff8c42 100%);
-  --shadow: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] {
+  /* Dark Mode - Charcoal background with glowing accents (Default) */
   --bg-primary: #1a1a1a;
-  --bg-secondary: #2d2d2d;
+  --bg-secondary: #252525;
+  --bg-tertiary: #2d2d2d;
   --text-primary: #f0f0f0;
   --text-secondary: #b0b0b0;
-  --shadow: rgba(0, 0, 0, 0.3);
+  --text-muted: #808080;
+  
+  /* Glowing orange/yellow from logo and iPad highlighters */
+  --accent-orange: #ff8c42;
+  --accent-orange-glow: #ffaa66;
+  --accent-yellow: #ffd700;
+  --accent-yellow-glow: #ffed4e;
+  
+  /* Professional dark blue from Adam's suit */
+  --accent-blue: #1e3a5f;
+  --accent-blue-light: #2d4f7a;
+  --accent-blue-glow: #3d6fa5;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #ff8c42 0%, #ffd700 100%);
+  --gradient-glow: linear-gradient(135deg, #ffaa66 0%, #ffed4e 100%);
+  --gradient-blue: linear-gradient(135deg, #1e3a5f 0%, #3d6fa5 100%);
+  
+  /* Shadows and glows */
+  --shadow: rgba(0, 0, 0, 0.5);
+  --glow-orange: 0 0 20px rgba(255, 140, 66, 0.4), 0 0 40px rgba(255, 140, 66, 0.2);
+  --glow-yellow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.2);
+  --glow-blue: 0 0 20px rgba(30, 58, 95, 0.4), 0 0 40px rgba(30, 58, 95, 0.2);
+}
+
+[data-theme="light"] {
+  /* Light Mode - Bright background with same accents */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e8e8e8;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-muted: #808080;
+  
+  /* Same accent colors */
+  --accent-orange: #ff8c42;
+  --accent-orange-glow: #ffaa66;
+  --accent-yellow: #ffd700;
+  --accent-yellow-glow: #ffed4e;
+  
+  --accent-blue: #1e3a5f;
+  --accent-blue-light: #2d4f7a;
+  --accent-blue-glow: #3d6fa5;
+  
+  /* Same gradients */
+  --gradient-primary: linear-gradient(135deg, #ff8c42 0%, #ffd700 100%);
+  --gradient-glow: linear-gradient(135deg, #ffaa66 0%, #ffed4e 100%);
+  --gradient-blue: linear-gradient(135deg, #1e3a5f 0%, #3d6fa5 100%);
+  
+  /* Lighter shadows for light mode */
+  --shadow: rgba(0, 0, 0, 0.1);
+  --glow-orange: 0 0 15px rgba(255, 140, 66, 0.3), 0 0 30px rgba(255, 140, 66, 0.15);
+  --glow-yellow: 0 0 15px rgba(255, 215, 0, 0.3), 0 0 30px rgba(255, 215, 0, 0.15);
+  --glow-blue: 0 0 15px rgba(30, 58, 95, 0.3), 0 0 30px rgba(30, 58, 95, 0.15);
 }
 
 body {

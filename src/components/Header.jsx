@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi'
+import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi'
+import Logo from './Logo'
 import './Header.css'
 
 const Header = ({ t, language, changeLanguage, theme, toggleTheme }) => {
@@ -18,7 +19,7 @@ const Header = ({ t, language, changeLanguage, theme, toggleTheme }) => {
     { code: 'de', name: 'DE', flag: '🇩🇪' },
     { code: 'en', name: 'EN', flag: '🇬🇧' },
     { code: 'fr', name: 'FR', flag: '🇫🇷' },
-    { code: 'ar', name: 'AR', flag: '🇸🇦' }
+    { code: 'ar', name: 'AR', flag: '🇲🇦' }
   ]
 
   const scrollToSection = (id) => {
@@ -32,10 +33,7 @@ const Header = ({ t, language, changeLanguage, theme, toggleTheme }) => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo">
-          <img src="/logo1.png" alt="Adam's Mathe Logo" />
-          <span>Adam's Mathe</span>
-        </div>
+        <Logo />
 
         <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <a href="#home" onClick={() => scrollToSection('home')}>{t.nav.home}</a>
@@ -60,7 +58,7 @@ const Header = ({ t, language, changeLanguage, theme, toggleTheme }) => {
           </div>
 
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
-            {theme === 'light' ? <FiMoon /> : <FiSun />}
+            {theme === 'dark' ? <FiSun /> : <FiMoon />}
           </button>
 
           <button 

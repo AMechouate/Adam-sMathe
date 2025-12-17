@@ -1,3 +1,11 @@
+/**
+ * Adam's Mathe - Professionelle Mathenachhilfe Website
+ * 
+ * @author Adam Mechouate
+ * @email adam.mechouate7@gmail.com
+ * @date 2024-12-17
+ */
+
 import { useState, useEffect } from 'react'
 import { translations } from './translations'
 import Header from './components/Header'

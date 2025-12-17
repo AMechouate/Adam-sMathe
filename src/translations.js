@@ -1,3 +1,11 @@
+/**
+ * Translations for Adam's Mathe Website
+ * 
+ * @author Adam Mechouate
+ * @email adam.mechouate7@gmail.com
+ * @date 2024-12-17
+ */
+
 export const translations = {
   de: {
     slogan: "Mathe, die dich weiterbringt.",

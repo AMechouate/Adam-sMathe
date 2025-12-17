@@ -2,6 +2,14 @@
   "name": "adams-mathe",
   "version": "1.0.0",
   "type": "module",
+  "author": {
+    "name": "Adam Mechouate",
+    "email": "adam.mechouate7@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AMechouate/Adam-sMathe.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

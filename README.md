@@ -2,6 +2,10 @@
 
 Eine moderne, mehrsprachige React-Website für Adam's Mathe-Nachhilfe-Service.
 
+**Author:** Adam Mechouate  
+**E-Mail:** adam.mechouate7@gmail.com  
+**Erstellt:** 17. Dezember 2024
+
 ## Features
 
 - 🌍 **4 Sprachen**: Deutsch, Englisch, Französisch, Arabisch
